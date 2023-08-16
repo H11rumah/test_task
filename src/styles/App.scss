@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+
+.App {
+    font-family: "Nunito";
+
+    h1 {
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: antiquewhite;
+
+        ul {
+            display: flex;
+            gap: 40px;
+            font-size: 26px;
+            cursor: pointer;
+            list-style-type: none;
+
+            li:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .news_page {
+        &_items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 0 10px 0;
+
+            .news_item {
+                width: 250px;
+                cursor: pointer;
+
+                &_img {
+                    width: 100%;
+                }
+
+                &_description {
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .login_page {
+        &_form {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 300px;
+            font-size: 20px;
+
+            &_field {
+                width: 100%;
+
+                &_input {
+                    border-radius: 5px;
+                    border: none;
+                    background-color: rgb(231, 231, 231);
+                    height: 30px;
+                    padding: 2px 4px;
+                    width: 100%;
+                    font-family: "Nunito";
+                    font-size: 16px;
+                }
+            }
+
+            &_error {
+                color: red;
+                font-size: 14px;
+            }
+
+            &_submit {
+                width: 100px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(231, 231, 231);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(218, 218, 218);
+                }
+            }
+        }
+    }
+
+    .profile_page {
+        &_logout {
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(231, 231, 231);
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(218, 218, 218);
+            }
+        }
+    }
+}
